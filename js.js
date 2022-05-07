@@ -1,6 +1,6 @@
 /**
  * Satik 2022
- * 
+ *
  * input  Validation
  *
  * * */
@@ -175,7 +175,13 @@ const signup = new SignupValidation();
 document.getElementById("sub").addEventListener("click", function () {
   signup.main();
 });
-
+document.getElementById("sub").addEventListener("keyup", function (event) {
+  if (event.code === "Enter") {
+    event.preventDefault();
+    document.querySelector("form").submit();
+  }
+  signup.main();
+});
 class Login {
   main() {
     const email = document.getElementById("loginMail").value;
