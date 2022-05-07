@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation-Satik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="log">
+      <div class="container">
+        <form action="#">
+          <div class="row">
+            <input
+              type="email"
+              id="loginMail"
+              required
+              class="inp"
+              placeholder="e-mail"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="password"
+              required
+              id="loginPass"
+              class="inp"
+              placeholder="Password"
+            />
+          </div>
+          <div id="error"></div>
+          <div class="row">
+            <input type="reset" id="log" class="btn" value="Log In" />
+          </div>
+        </form>
+        <div class="row">
+          <input
+            type="button"
+            id="popup"
+            class="btn-0"
+            value="Create new account"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="sign" id="signUp">
+      <div class="container">
+        <div class="row f-end" id="clos"><i class="fa fa-close"></i></div>
+        <div class="row"><h1>Sign Up</h1></div>
+        <div class="row"><p>It’s quick and easy.</p></div>
+        <form action="#">
+          <div class="row">
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="text" id="surname" placeholder="Surname" required />
+          </div>
+          <div class="row">
+            <input
+              type="email"
+              id="gmail"
+              required
+              class="inp"
+              placeholder="e-mail"
+            />
+          </div>
+          <div class="user" id="rowUser">
+            <div>
+              <input
+                type="text"
+                id="username"
+                required
+                class="inp"
+                placeholder="Username"
+              />
+            </div>
+          </div>
+          <div class="pas" id="rowPass">
+            <div>
+              <input
+                type="password"
+                required
+                id="pas"
+                class="inp"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div class="validation">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div class="row">
+            <input type="submit" id="sub" class="btn" value="Sign Up" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
