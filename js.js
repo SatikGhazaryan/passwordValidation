@@ -197,7 +197,7 @@ class Login {
       document.write(`Hello  ${user.name} ${user.surname} `);
     } else {
       let p = document.createElement("p");
-      p.innerHTML = "error";
+      p.innerHTML = "No users found with this data";
       document.getElementById("error").append(p);
     }
     return "login";
